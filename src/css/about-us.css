@@ -1,0 +1,126 @@
+.section {
+    background-color: #0e1823;
+}
+
+.about-container {
+    position: relative;
+    height: 775px;
+}
+
+.about-description {
+    border-radius: 24px;
+    background-color: #fbfbfb;
+    padding: 40px 20px;
+    margin-top: -59px;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 675px;
+}
+
+.section-subtitle {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    max-width: 295px;
+    margin-bottom: 40px;
+}
+
+.about-subtitle {
+    color: #1b414b;
+}
+
+.about-card {
+    max-width: 100%;          
+}
+.text-promo {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #1b414b;
+    margin-bottom: 20px;
+}
+
+.text-about {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #040306;
+    opacity: 0.4;
+}
+
+.about-wrapper {
+    position: absolute;
+    top: 380px;
+    z-index: 2;
+}
+.about-image {
+    border-radius: 24px;
+    object-fit: cover;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@media screen and (min-width:768px) {
+    .about-container {
+        height: 951px;
+    }
+    .about-description {
+        padding: 50px 32px;
+        margin-top: -67px;
+        height: 675px;    
+    }
+    .section-subtitle {
+        font-size: 48px;
+        max-width: 536px;
+        margin-bottom: 50px;
+    }
+    .about-card {
+        max-width: 389px;
+    }
+    .text-promo {
+        font-size: 23px;
+    }  
+    .text-about {
+        font-size: 13px;
+        line-height: 1.15;
+    }    
+    
+        .about-wrapper {
+            position: absolute;
+            top: 481px;
+            z-index: 2;
+        }
+}
+
+
+@media screen and (min-width:1280px) {
+    .about-container {
+            height: 830px;
+        }
+    .about-description {
+        padding: 50px 50px;
+        margin-top: -35px;
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .about-card {
+        max-width: 354px;
+    }
+    .about-image {
+        width: 1180px;
+        height: 470px;
+        object-position: left;
+    }
+    .about-wrapper {
+        position: absolute;
+        top: 360px;
+        z-index: 2;
+    }
+}
