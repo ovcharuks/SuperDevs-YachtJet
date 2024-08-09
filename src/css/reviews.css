@@ -47,6 +47,26 @@
     margin-bottom: 24px;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 2dppx),
+       (min-resolution: 192dpi) {
+
+    .photo-john img {
+        content: url('../img/reviews/john2x.png');
+    }
+
+    .photo-victoria img {
+        content: url('../img/reviews/victoria2x.png');
+    }
+
+    .photo-ihor img {
+        content: url('../img/reviews/ihor2x.png');
+    }
+
+}
+
+
+
 
 .card-name-reviews {
     font-weight: 500;
@@ -70,10 +90,6 @@
 
     margin: 0 auto;
     max-width: 283px;
-}
-
-.hide-card {
-    display: none;
 }
 
 .hide-victoria {
