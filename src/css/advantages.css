@@ -12,18 +12,16 @@
   }
   .container-advantages {
     background-color: #0e1823;
-    min-width: 320px;
-    max-width: 375px;
-    padding-right: 20px;
-    padding-left: 20px;
-    
+   
   }
 
   .list-oder {
     border-radius: 24px;
     max-width: 335px;
     background: #1b414b;
-   
+    margin-bottom: 20px;
+
+    
  }
 
 .list-advantages {
@@ -32,25 +30,35 @@
    display: flex;
    flex-wrap: wrap;
    gap: 40px;
-   margin-bottom: 20px;
+  }
+
+  ol {
+    /* column-count: 4; */
+    counter-reset: li;
+  }
+
+.list-advantages>.list-advantages-item {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
 }
+.list-advantages>.list-advantages-item::before {
+    content: "0"counter(li);
+    counter-increment: li;
+    position: absolute;
+    top: -38px;
+    left: 0;
+    font-size: 28px;
+}
+
 .list-advantages-item {
     width: 100%;
+    position: relative;
 }
 
-.list-advantages-number {
-  
-font-family: "Inter", sans-serif;
-font-weight: 500;
-font-size: 28px;
-line-height: 1;
-letter-spacing: -0.05em;
-color: #fbfbfb;
-position: relative;
-margin-bottom: 18px;
-}
 
-.list-advantages-number::after {
+.list-advantages-item::after {
     content: "";
     border-radius: 18px;
     width: 100%;
@@ -58,14 +66,12 @@ margin-bottom: 18px;
     box-sizing: border-box;
     position: absolute;
     left: 0;
-    top: 36px;
-    margin-bottom: 18px;
+    top: 0;
     background: rgba(251, 251, 251, 0.1);
 }
 
 .list-advantages-text {
-
-font-family: "Inter", sans-serif;
+position: relative;
 font-weight: 400;
 font-size: 12px;
 line-height: 1.17;
@@ -73,23 +79,20 @@ letter-spacing: -0.02em;
 color: #fbfbfb;
 opacity: 0.8;
 margin-bottom: 18px;
+padding-top: 18px;
+padding-bottom: 18px;
 width: 100%;
 
 }
 
 .image-advantages {
-    display: block;
-    max-width: 100%;
-    height: auto;
+    
     border-radius: 24px;
     overflow: hidden;
 }
 
 @media screen and (min-width: 768px) {
-     .container-advantages{
-        max-width: 768px;
-        padding: 0 32px;
-    }
+     
     .list-oder {
         max-width: 704px;
        
@@ -114,8 +117,7 @@ width: 100%;
 }
 @media screen and (min-width: 1280px) {
        .container-advantages {
-        max-width: 1280px;
-         padding: 0 50px;
+        
          display: flex;
          gap: 32px;
          align-items: center;
