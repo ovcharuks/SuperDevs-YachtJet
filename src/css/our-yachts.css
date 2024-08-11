@@ -11,13 +11,15 @@
   font-weight: 500;
   font-size: 28px;
   line-height: 1;
+  letter-spacing: 0.02em;
   text-align: center;
   color: #fbfbfb;
-  max-width: 319px;
+  width: 319px;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
 }
+
 .our-yachts-list {
   display: flex;
   flex-wrap: wrap;
@@ -151,7 +153,7 @@
   .our-yachts-title {
     font-size: 48px;
     margin-bottom: 75px;
-    max-width: 640px;
+    width: 645px;
   }
 
   .our-yachts-tablet {
@@ -217,7 +219,7 @@
   }
 
   .our-yachts-title {
-    max-width: 714px;
+    width: 714px;
   }
 
   .our-yachts-list {
