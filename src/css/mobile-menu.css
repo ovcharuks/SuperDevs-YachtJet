@@ -1,6 +1,6 @@
-.mobile-menu.is-open {
+/* .mobile-menu {
     transform: translateX(0);  
-}
+} */
 
 .mobile-menu {
     background-color: #0e1823; 
@@ -20,8 +20,8 @@
     min-width: 320px;
     height: auto; */
     z-index: 1;
-    transform: translateX(105%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* transform: translateX(105%); */
+    /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .form-menu {
