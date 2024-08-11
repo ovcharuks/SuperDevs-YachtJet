@@ -9,7 +9,7 @@
     margin-left: auto;
     max-width: 375px;
     min-width: 320px;
-    height: 812px;
+    height: auto;
     z-index: 1;
     transform: translateX(105%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -124,4 +124,10 @@
 
 .soc-link {
     fill: #fbfbfb;   
+}
+
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
 }
