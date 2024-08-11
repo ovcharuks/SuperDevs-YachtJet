@@ -1,0 +1,67 @@
+<section id="rent-a-yacht" class="section rent">
+  <div class="container">
+    <div class="rent-content">
+      <div class="rent-form">
+        <h2 class="rent-title">Rent a yacht now</h2>
+        <form name="rent-order-form" class="rent-order-form" autocomplete="off">
+          <label class="rent-form-label">
+            <input
+              class="form-input"
+              name="user-name"
+              type="text"
+              id="user-name"
+              placeholder="Full Name"
+              required
+            />
+          </label>
+
+          <label class="rent-form-label">
+            <input
+              class="form-input"
+              name="user-email"
+              type="email"
+              id="user-email"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+              placeholder="Email"
+              required
+            />
+          </label>
+
+          <label class="rent-form-label">
+            <input
+              class="form-input"
+              name="form-phone"
+              type="tel"
+              id="user-phone"
+              pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$"
+              placeholder="Phone number"
+              required
+            />
+          </label>
+
+          <label class="rent-form-label">
+            <textarea
+              class="form-comment"
+              rows="4"
+              id="rent-comment"
+              placeholder="Comment"
+            >
+            </textarea>
+          </label>
+
+          <button class="btn primary-btn send-btn" type="submit">Send</button>
+        </form>
+      </div>
+
+      <div class="rent-img">
+        <img
+          srcset="/img/rent/rent.jpg 1x, /img/rent/rent@2x.jpg 2x"
+          src="/img/rent/rent.jpg
+            "
+          width="335"
+          alt="rent a yacht now"
+        />
+      </div>
+    </div>
+  </div>
+</section>
