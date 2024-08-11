@@ -4,8 +4,11 @@
 
 .mobile-menu {
     background-color: #0e1823; 
-    padding: 16px 20px 40px 20px; 
-    width: 375px;
+    padding: 16px 20px 40px 20px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 375px;
+    min-width: 320px;
     height: 812px;
     z-index: 1;
     transform: translateX(105%);
@@ -16,7 +19,7 @@
     background-color: #fbfbfb; 
     border: 1px solid #fbfbfb;
    border-radius: 8px;
-  min-width: 335px;
+  max-width: 335px;
    height: 42px;
    display: flex;
    align-items: center;
@@ -118,7 +121,6 @@
     width: 24px;
     height: 24px;
 }
-
 
 .soc-link {
     fill: #fbfbfb;   
