@@ -25,6 +25,7 @@
 }
 .mob_btn_opn {
   border: none;
+  padding: 0;
   width: 28px;
   height: 28px;
   background-color: transparent;
@@ -77,7 +78,7 @@
     width: 91px;
     height: 40px;
     background-color: rgba(27, 65, 75, 0.5);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .nav_link:hover,
   .nav_link:focus {
@@ -98,6 +99,7 @@
     fill: #1b414b;
     width: 24px;
     height: 24px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .social_link:hover,
   .social_link:focus {
@@ -121,8 +123,5 @@
     padding: 32px 20px 0;
   }
   .header_box {
-  }
-  .header_logo {
-    margin-right: 375px;
   }
 }
