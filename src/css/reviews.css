@@ -52,15 +52,15 @@
        (min-resolution: 192dpi) {
 
     .photo-john img {
-        content: url('../img/reviews/john2x.png');
+        content: url('/img/reviews/john2x.png');
     }
 
     .photo-victoria img {
-        content: url('../img/reviews/victoria2x.png');
+        content: url('/img/reviews/victoria2x.png');
     }
 
     .photo-ihor img {
-        content: url('../img/reviews/ihor2x.png');
+        content: url('/img/reviews/ihor2x.png');
     }
 
 }
