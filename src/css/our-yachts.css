@@ -1,0 +1,262 @@
+.our-yachts .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.our-yachts-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fbfbfb;
+  width: 319px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.our-yachts-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.our-yachts-item {
+  display: flex;
+  background-color: aliceblue;
+  padding: 16px 16px 32px 16px;
+  border-radius: 24px;
+  margin-bottom: 40px;
+}
+
+.our-yachts-img {
+  border-radius: 24px;
+  margin-bottom: 32px;
+}
+
+.our-yachts-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 125px;
+  margin-bottom: 32px;
+}
+
+.our-yachts-name::after {
+  width: 272px;
+  height: 1px;
+  background-color: rgba(4, 3, 6, 0.1);
+  content: '';
+  position: absolute;
+  margin-top: 48px;
+}
+
+.our-yacht-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #1b414b;
+}
+
+.our-yacht-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #040306;
+  opacity: 0.4;
+}
+
+.our-yachts-about {
+  display: flex;
+  gap: 114px;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-yachts-characteristic {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.our-yachts-description {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.yachts-characteristic {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #040306;
+  opacity: 0.4;
+}
+
+.yachts-description {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: #040306;
+}
+
+.our-yachts-tablet {
+  display: none;
+}
+
+.our-yachts-desktop {
+  display: none;
+}
+
+.our-yachts-button {
+  border: 1px solid rgba(251, 251, 251, 0.35);
+  border-radius: 15px;
+  padding: 14px 32px;
+  width: 141px;
+  height: 46px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  background-color: transparent;
+  transition: background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-yachts-button:hover,
+.our-yachts-button:focus {
+  background-color: #fbfbfb;
+  color: #1b414b;
+}
+
+@media screen and (min-width: 768px) {
+  .our-yachts .container {
+    padding: 150px 0;
+  }
+
+  .our-yachts-title {
+    font-size: 48px;
+    margin-bottom: 75px;
+    width: 645px;
+  }
+
+  .our-yachts-tablet {
+    display: flex;
+  }
+
+  .our-yachts-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 31px;
+  }
+
+  .our-yachts-item {
+    margin-bottom: 50px;
+  }
+
+  .our-yachts-img {
+    width: 304px;
+    height: 268px;
+  }
+
+  .our-yachts-name {
+    gap: 112px;
+  }
+
+  .name-benetti {
+    gap: 22px;
+  }
+
+  .name-benetti-title {
+    width: 149px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .our-yacht-subtitle {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .our-yacht-text {
+    font-size: 13px;
+    line-height: 1.18;
+  }
+
+  .our-yachts-about {
+    gap: 116px;
+  }
+
+  .our-yachts-button {
+    padding: 16px 40px;
+    width: 179px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .our-yachts-desktop {
+    display: flex;
+  }
+
+  .our-yachts-title {
+    width: 714px;
+  }
+
+  .our-yachts-list {
+    gap: 25px;
+  }
+
+  .our-yachts-img {
+    width: 345px;
+    height: 268px;
+  }
+
+  .our-yachts-name {
+    gap: 153px;
+  }
+
+  .our-yachts-name::after {
+    width: 313px;
+  }
+
+  .name-benetti {
+    gap: 33px;
+  }
+
+  .name-benetti-title {
+    width: 177px;
+  }
+
+  .name-belle {
+    gap: 118px;
+  }
+
+  .our-yachts-about {
+    gap: 145px;
+  }
+
+  .our-yachts-button {
+    width: 179px;
+    height: 52px;
+  }
+}
