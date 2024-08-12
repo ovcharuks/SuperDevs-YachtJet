@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px 0;
+  padding-bottom: 80px;
   background-color: #0e1823;
 }
 
@@ -150,7 +150,7 @@
 
 @media screen and (min-width: 768px) {
   .our-yachts .container {
-    padding: 150px 0;
+    padding-bottom: 150px;
   }
 
   .our-yachts-title {
