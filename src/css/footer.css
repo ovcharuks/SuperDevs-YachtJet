@@ -2,11 +2,24 @@ footer {
     background: #0e1823;
 }
 
-.footer-container {
+.footer-page {
     margin-left: auto;
     margin-right: auto;
+    min-width: 320px;
+    max-width: 375px;
+}
+
+.footer-container {
+    margin-right: 10px;
+    margin-left: 10px;
     border-radius: 24px 24px 0 0;
     background: #1b414b;
+}
+
+.footer-mobile-container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
 }
 
 .footer-logo {
@@ -14,6 +27,9 @@ footer {
     letter-spacing: -0.03em;
     color: #fbfbfb;
     display: block;
+    font-size: 14px;
+    margin-top: 40px;
+    margin-left: 30px;
 }
 
 .footer-main-txt {
@@ -22,11 +38,18 @@ footer {
     letter-spacing: -0.02em;
     text-align: center;
     color: #fbfbfb;
+    font-size: 18px;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 82px;
 }
 
 .footer-list {
     display: flex;
     justify-content: center;
+    margin-top: 40px;
+    margin-left: 10px;
 }
 
 .footer-list-item:not(:last-child) {
@@ -38,15 +61,16 @@ footer {
     height: 40px;
     background: rgba(251, 251, 251, 0.3);
     text-align: center;
+    width: 66px;
 }
 
 .footer-list-item:hover,
-.footer-list-item:focus{
+.footer-list-item:focus {
     background: #fbfbfb;
 }
 
 .footer-list-link:hover,
-.footer-list-link:focus{
+.footer-list-link:focus {
     color: #1b414b;
 }
 
@@ -59,20 +83,28 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
+    padding: 15px 12px;
 }
 
 .social-list {
     display: flex;
+    margin-top: 80px;
+    max-width: 88px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
 }
 
+.social-list-item:not(:last-child) {
+    margin-right: 8px;
+}
 
 .footer-icon {
     fill: #fbfbfb;
 }
 
 .footer-icon:hover,
-.footer-icon:focus{
+.footer-icon:focus {
     fill: rgba(251, 251, 251, 0.8);
 }
 
@@ -88,74 +120,27 @@ footer {
     color: rgba(251, 251, 251, 0.4);
 }
 
-@media screen and (max-width: 768px) {
-    .footer-page {
-        min-width: 320px;
-        max-width: 375px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.under-item:not(:last-child) {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
 
-    .footer-mobile-container {
-        display: flex;
-        justify-content: space-between;
-        margin-right: 30px;
-    }
-
-    .footer-logo {
-        font-size: 14px;
-        margin-top: 40px;
-        margin-left: 30px;  
-    }
-
-    .footer-list {
-        margin-top: 40px;
-    }
-
-    .footer-list-item {
-        width: 66px;
-    }
-
-    .footer-list-link {
-        padding: 15px 12px;
-    }
-
-    .social-list-item:not(:last-child) {
-        margin-right: 8px;
-    }
-
-    .social-list {
-        margin-top: 80px;
-        max-width: 88px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 40px;
-    }
-
-    .footer-main-txt {
-        font-size: 18px;
-        max-width: 280px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 82px;
-    }
-
-    .under-item:not(:last-child) {
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
-
-    .under-link {
-        font-size: 12px;
-        line-height: 1.17;
-    }
+.under-link {
+    font-size: 12px;
+    line-height: 1.17;
 }
 
 @media screen and (min-width: 768px) {
     .footer-page {
-        max-width: 736px;
+        max-width: 768px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .footer-container {
+        max-width: 736px;
+        margin-left: 16px;
+        margin-right: 16px;
     }
 
     .up-container {
@@ -212,19 +197,25 @@ footer {
 
 @media screen and (min-width: 1280px) {
     .footer-page {
-        max-width: 1390px;
+        max-width: 1280px;
     }
 
-    .up-container{
+    .footer-container {
+        min-width: 1230px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .up-container {
         justify-content: space-between;
     }
 
     .footer-logo {
         margin-left: 75px;
-        margin-right: 330px;
+        margin-right: 326px;
     }
 
-    .social-list{
+    .social-list {
         margin-right: 75px;
     }
 
