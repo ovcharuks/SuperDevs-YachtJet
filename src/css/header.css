@@ -1,6 +1,9 @@
 .header {
   padding-top: 20px;
   background-color: transparent;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
 }
 .header_box {
   display: flex;
@@ -11,6 +14,7 @@
   border-radius: 8px;
   height: 42px;
   padding: 0 20px;
+  margin-top: 20px;
 }
 .header_logo {
   font-family: 'Inter', sans-serif;
@@ -41,6 +45,7 @@
   }
   .header_box {
     height: 48px;
+    margin: 32px;
   }
   .mob_btn_opn {
     display: none;
@@ -102,8 +107,9 @@
 
 @media screen and (min-width: 1280px) {
   .header {
-    padding: 32px 100px 0;
     background-color: transparent;
+  }
+  .header_box {
   }
   .header_logo {
     margin-right: 296px;
@@ -113,6 +119,8 @@
 @media (min-width: 1440px) {
   .header {
     padding: 32px 20px 0;
+  }
+  .header_box {
   }
   .header_logo {
     margin-right: 375px;
