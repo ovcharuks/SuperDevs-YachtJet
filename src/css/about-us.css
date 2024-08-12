@@ -1,17 +1,16 @@
-
-.section {
-    background-color: #0e1823;
+.about-section {
+    margin-top: -59px;
 }
 
 .about-container {
     min-width: 320px;
     max-width: 375px;
+    background-color: transparent;
 }
 
 .about-description {
     border-radius: 24px;
     background-color: #fbfbfb;
-    margin-top: -59px;
     display: flex;
     flex-direction: column;
     
@@ -68,16 +67,18 @@
 }
 
 @media screen and (min-width:768px) {
+    .about-section {
+            margin-top: -67px;
+        }
     .about-container {
         min-width: 768px;
     }
-    .about-description {
-        margin-top: -67px;
-    }
+
     .about-card {
         padding: 0 32px;
         padding-top: 50px;
         width: 100%;
+        margin-bottom: 50px;
     }
     .section-subtitle {
         font-size: 48px;
@@ -99,19 +100,20 @@
 
 
 @media screen and (min-width:1280px) {
+    .about-section {
+        margin-top: -35px;
+        }
     .about-container {
         min-width: 1280px;
         }
-    .about-description {
-        margin-top: -35px;        
-    }
-    
+
     .about-card {
         padding: 0 50px;
         padding-top: 50px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+            margin-bottom: 100px;
     }
     .about-wrapper {
         max-width: 354px;
