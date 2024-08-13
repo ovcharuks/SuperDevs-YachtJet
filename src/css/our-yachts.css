@@ -1,9 +1,11 @@
-.our-yachts .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 0;
+.our-yachts {
+  padding: 0 0 80px 0;
+  background-color: #0e1823;
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 20px;
 }
 
 .our-yachts-title {
@@ -21,38 +23,41 @@
 }
 
 .our-yachts-list {
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .our-yachts-item {
-  display: flex;
-  background-color: aliceblue;
+  background-color: #fbfbfb;
   padding: 16px 16px 32px 16px;
   border-radius: 24px;
-  margin-bottom: 40px;
 }
 
 .our-yachts-img {
   border-radius: 24px;
-  margin-bottom: 32px;
+  width: 302px;
+  height: 240px;
+}
+
+.our-yachts-container {
+  padding: 32px 16px 0 16px;
 }
 
 .our-yachts-name {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 125px;
+  justify-content: space-between;
   margin-bottom: 32px;
+  position: relative;
 }
 
 .our-yachts-name::after {
-  width: 272px;
+  width: 100%;
   height: 1px;
   background-color: rgba(4, 3, 6, 0.1);
   content: '';
   position: absolute;
-  margin-top: 48px;
+  left: 0;
+  top: 32px;
 }
 
 .our-yacht-subtitle {
@@ -76,23 +81,15 @@
   opacity: 0.4;
 }
 
-.our-yachts-about {
-  display: flex;
-  gap: 114px;
-  justify-content: center;
-  align-items: center;
-}
-
-.our-yachts-characteristic {
+.our-yachts-characteristic-list {
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-.our-yachts-description {
+.our-yachts-characteristic-item {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
+  justify-content: space-between;
 }
 
 .yachts-characteristic {
@@ -113,6 +110,8 @@
   line-height: 1.18;
   letter-spacing: 0.03em;
   color: #040306;
+  display: block;
+  width: 94px;
 }
 
 .our-yachts-tablet {
@@ -123,31 +122,39 @@
   display: none;
 }
 
-.our-yachts-button {
+.our-yachts-link {
+  display: block;
   border: 1px solid rgba(251, 251, 251, 0.35);
   border-radius: 15px;
   padding: 14px 32px;
-  width: 141px;
+  width: 142px;
   height: 46px;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
+  text-align: center;
   color: #fbfbfb;
   background-color: transparent;
+  margin: 0 auto;
   transition: background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-yachts-button:hover,
-.our-yachts-button:focus {
+.our-yachts-link:hover,
+.our-yachts-link:focus {
   background-color: #fbfbfb;
   color: #1b414b;
 }
 
 @media screen and (min-width: 768px) {
-  .our-yachts .container {
-    padding: 150px 0;
+  .our-yachts {
+    padding: 0 0 150px 0;
+  }
+
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
   }
 
   .our-yachts-title {
@@ -157,30 +164,19 @@
   }
 
   .our-yachts-tablet {
-    display: flex;
+    display: block;
   }
 
   .our-yachts-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 31px;
-  }
-
-  .our-yachts-item {
+    gap: 32px;
     margin-bottom: 50px;
   }
 
   .our-yachts-img {
     width: 304px;
     height: 268px;
-  }
-
-  .our-yachts-name {
-    gap: 112px;
-  }
-
-  .name-benetti {
-    gap: 22px;
   }
 
   .name-benetti-title {
@@ -200,11 +196,11 @@
     line-height: 1.18;
   }
 
-  .our-yachts-about {
-    gap: 116px;
+  .yachts-description {
+    width: 96px;
   }
 
-  .our-yachts-button {
+  .our-yachts-link {
     padding: 16px 40px;
     width: 179px;
     height: 52px;
@@ -215,7 +211,12 @@
 
 @media screen and (min-width: 1280px) {
   .our-yachts-desktop {
-    display: flex;
+    display: block;
+  }
+
+  .container {
+    max-width: 1280px;
+    padding: 0 50px;
   }
 
   .our-yachts-title {
@@ -223,7 +224,7 @@
   }
 
   .our-yachts-list {
-    gap: 25px;
+    gap: 24px;
   }
 
   .our-yachts-img {
@@ -231,31 +232,11 @@
     height: 268px;
   }
 
-  .our-yachts-name {
-    gap: 153px;
-  }
-
-  .our-yachts-name::after {
-    width: 313px;
-  }
-
-  .name-benetti {
-    gap: 33px;
-  }
-
   .name-benetti-title {
     width: 177px;
   }
 
-  .name-belle {
-    gap: 118px;
-  }
-
-  .our-yachts-about {
-    gap: 145px;
-  }
-
-  .our-yachts-button {
+  .our-yachts-link {
     width: 179px;
     height: 52px;
   }
