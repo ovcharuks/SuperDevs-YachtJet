@@ -109,11 +109,7 @@ width: 100%;
     .list-oder {
         max-width: 704px;    
     }
-     .section-advantages {
-        padding-left: 32px;
-        padding-right: 32px;
-        
-    }
+   
     .list-advantages {
         display: flex;
         flex-wrap: wrap;
@@ -137,11 +133,7 @@ width: 100%;
 
 }
 @media screen and (min-width: 1280px) {
-        .section-advantages {
-        padding-left: 50px;
-        padding-right: 50px;  
-
-        }
+       
        .container-advantages {
          display: flex;
          gap: 32px;
