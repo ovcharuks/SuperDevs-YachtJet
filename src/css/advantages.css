@@ -65,6 +65,8 @@
 .list-advantages-item {
     width: 100%;
     position: relative;
+    margin-bottom: 18px;
+
 }
 
 
@@ -88,7 +90,6 @@ line-height: 1.17;
 letter-spacing: -0.02em;
 color: #fbfbfb;
 opacity: 0.8;
-margin-bottom: 18px;
 padding-top: 18px;
 padding-bottom: 18px;
 width: 100%;
@@ -117,7 +118,6 @@ width: 100%;
         display: flex;
         flex-wrap: wrap;
         gap: 59px 32px;
-       /* padding: 90px 32px;*/
        padding-left: 32px;
        padding-top: 110px;
        padding-bottom: 90px;
@@ -148,22 +148,16 @@ width: 100%;
         
        }
          
-       .list-advantages-text {
-        padding-bottom: 24px;
-        padding-top: 24px;
-       }
+       
     
     .list-oder {
        max-width: 716px;
+       margin-bottom: 0;
     }
 
     .list-advantages {
         gap: 59px 44px;
-       /* padding:  90px 50px;*/
-       padding-top: 120px;
-       padding-left: 50px;
-       padding-right: 50px;
-       padding-bottom: 90px;
+      
 
     }
     
