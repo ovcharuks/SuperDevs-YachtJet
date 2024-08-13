@@ -1,0 +1,119 @@
+.about-section {
+    margin-top: -59px;
+}
+
+.about-container {
+    min-width: 320px;
+    max-width: 375px;
+    background-color: transparent;
+}
+
+.about-description {
+    border-radius: 24px;
+    background-color: #fbfbfb;
+}
+.about-card {
+    max-width: 295px;
+    padding: 0 20px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+.section-subtitle {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    max-width: 295px;
+    margin-bottom: 40px;
+}
+
+.about-subtitle {
+    color: #1b414b;
+}
+
+.text-promo {
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #1b414b;
+    margin-bottom: 20px;
+    }
+
+.text-about {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #040306;
+    opacity: 0.4;
+}
+
+.about-image-box {
+    width: 100%;
+}
+.about-image {
+    border-radius: 24px;
+    margin: 0 auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+@media screen and (min-width:768px) {
+    .about-section {
+        margin-top: -67px;
+        }
+    .about-container {
+        min-width: 768px;
+    }
+
+    .about-card {
+        padding: 0 32px;
+        padding-top: 50px;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    .section-subtitle {
+        font-size: 48px;
+        max-width: 536px;
+        margin-bottom: 50px;
+    }
+    .about-wrapper {
+        max-width: 389px;
+    }
+    .text-promo {
+        font-size: 23px;
+    }  
+    .text-about {
+        font-size: 13px;
+        line-height: 1.15;
+    }    
+    
+}
+
+
+@media screen and (min-width:1280px) {
+    .about-section {
+        margin-top: -35px;
+        }
+    .about-container {
+        min-width: 1280px;
+        }
+
+    .about-card {
+        padding: 0 50px;
+        padding-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 100px;
+    }
+    .section-subtitle {
+        margin-bottom: 0;
+    }
+    .about-wrapper {
+        max-width: 354px;
+    }
+    
+    .about-image {
+        width: 1180px;
+    }
+}
