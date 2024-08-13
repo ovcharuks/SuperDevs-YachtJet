@@ -1,5 +1,4 @@
 .container-reviews {
-    background-color: #0E1823;
     padding-top: 40px;
     padding-bottom: 40px;
 }
@@ -36,9 +35,10 @@
 .card-container-reviews {
     border-radius: 24px;
     padding: 32px 8px;
-
+    width: 335px;
     background: #fbfbfb;
 }
+
 
 .card-image-reviews {
     width: 56px;
@@ -139,13 +139,12 @@
 
 
     .card-container-reviews {
-        max-width: 336px;
+        width: 336px;
+
     }
 
     .card-text-reviews {
-        max-width: 296px;
-        padding-left: 12px;
-        padding-right: 12px;
+        width: 296px;
     }
 
 
@@ -187,8 +186,15 @@
         gap: 26px;
     }
 
+    .card-container-reviews {
+        width: 376px;
+        padding: 32px 28px;
+
+    }
+
+
     .card-text-reviews {
-        max-width: 320;
+        width: 320px;
         
     }
 
